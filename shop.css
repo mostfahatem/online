@@ -1,0 +1,354 @@
+
+body{
+    overflow-x: hidden;
+}
+.top1{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    vertical-align: middle;
+}
+.logo1 {
+    width: 12%;
+    height: 10%;
+    margin-left: 0%;
+    margin-right: 21%;
+}
+#vv {
+    margin-left: 17%;
+}
+.top-left1{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    width: 100%;
+    margin-left: 20%;
+    vertical-align: middle;
+}
+
+.top-left1 .fas {
+margin-right: 1%;
+color: blue;
+margin-top: 1.0%;
+margin-left: 1.5%;
+
+}
+.top-left1 p{
+    margin-right: 1%;
+}
+.top-left1 h5{
+    margin-left: 2%;
+    margin-right: 1%;
+}
+.dropdown {
+    display: inline-block;
+  
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 50;
+    background-color:#0E26B1;
+    min-width: 100vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: white;
+    font-weight: bolder;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.fa-bars{
+    margin-right: 3rem;
+    font-size: 1.8rem;
+    display: none;
+}
+.contents{
+    margin-left: 30%;
+}
+.lt a{
+    text-decoration: none;
+    margin: 2%;
+    color: black;
+}
+.contents a:hover{
+    color: blue;
+}
+@media screen and (max-width:1372px) {
+    .top-left1{
+        display: none;
+    }
+}
+@media screen and (max-width:1052px) {
+    .contents{
+        margin-left: 12%;
+    }
+}
+@media screen and (max-width:635px) {
+    .lt{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+    }
+}
+.back{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.589),rgba(0,0,0,0.5)),url('images/back.jpg');
+    background-repeat: no-repeat;
+    height: 50%;
+
+    background-position-y: 0px,-400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.back div{
+    margin-top: 2%;
+    text-align: center;
+}
+.back div a{
+    text-decoration: none;
+    color: white;
+    font-size: small;
+  
+}
+.main{
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+}
+.left{
+    width: 50%;
+}
+.right{
+    width: 50%;
+}
+.left button{
+    margin-left: 10%;
+    height: 3.5rem;
+    width: 20%;
+    text-align-last: left;
+    
+}
+.btn-group{
+    margin-left: 50%;
+    height: 3.5rem;
+    width: 10%;
+    text-align-last: left;
+}
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 3.0rem;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+.more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    /* width: 100vh; */
+}
+.flip-card {
+
+    background-color: transparent;
+    width: 320px;
+    height: 320px;
+    perspective: 1000px;
+     margin: 3%;
+    /* margin-left: 8%; */
+}
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    font-family: Georgia, serif;
+}
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+  
+  .flip-card-back {
+    background-color:rgb(60, 108, 197) ;
+    color: white;
+    transform: rotateY(180deg);
+}
+.row{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+}
+.next{
+    width:20rem;
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    background-color: #0E26B1;
+    align-items: center;
+    justify-items: center;
+    margin-left: 40%;
+    border-radius: 10%;
+}
+.next p{
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:1014px) {
+    .next{
+        margin-left: 30%;  
+    }
+}
+@media screen and (max-width:748px) {
+    .next{
+        width: 16rem;
+        margin-left: 25%;  
+    }
+}
+@media screen and (max-width:478px) {
+    .next{
+        width: 13rem;
+        margin-left: 23%;  
+    }
+}
+@media screen and (max-width:330px) {
+    .next{
+        width: 11rem;
+        margin-left: 20%;  
+    }
+}
+.full{
+    margin-left: 10%;
+}
+.row1{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+}
+.contain{
+    width: 25%;
+    height:25%;
+    min-width: 20rem;
+    min-width: 20rem;
+}
+.log{
+    margin-left: 4.8rem;
+    font-size: 1.9rem;
+    color: blue;
+}
+.write{
+    width: 80%;
+    align-items: center;
+}
+@media screen and (max-width:687px) {
+    .contain{
+        width: 15%;
+        height:25%;
+        min-width: 20rem;
+        min-width: 20rem;
+    }
+}
+@media screen and (max-width:490px) {
+    .full{
+        margin-left: 20%;
+    }
+}
+@media screen and (max-width:440px) {
+    .full{
+        margin-left: 30%;
+    }
+    .contain{
+        width: 7%;
+        height:25%;
+        min-width: 20rem;
+        min-width: 20rem;
+    }
+    .log{
+        width: 7%;
+    }
+    .full{
+        margin-left: 7%;
+    }
+}
+.end{
+    width: 100%;
+    height: 30%;
+    margin-top: 6%;
+}
+.end img{
+    width: 100%;
+}
+@media screen and (max-width:281px) {
+    .row1 {
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+        /* justify-items: center; */
+        width: 80%;
+        margin-left: 20%;
+    }
+    .full{
+        margin-left: 10%;
+    }
+.contain {
+    width: 2%;
+    height: 25%;
+    min-width: 20rem;
+    min-width: 20rem;
+}
+    .write{
+        width: 80%;
+        align-items: center;
+    }
+}
